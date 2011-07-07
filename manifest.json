@@ -1,0 +1,13 @@
+{
+	"name": "KeyBrowser",
+	"version": "0.1.0",
+	"description": "A way to browse the web with screenreader-inspired navigation shortcuts.",
+	
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"css": ["kb.css"],
+			"js": ["jquery-1.6.2.min.js", "kb.js"]
+		}
+	]
+}
