@@ -1,3 +1,13 @@
 .keybrowser-selected {
-	border: 3px solid red;
+	-webkit-animation: blur-in 1s 0s 1 alternate;
+}
+
+@-webkit-keyframes blur-in {
+	from { 
+		text-shadow: 0 0 72px black; color: transparent;
+	}
+  	to {
+		text-shadow: 0;
+		color: inherit;
+	}
 }
